@@ -19,7 +19,7 @@ public class Review {
 		this.content = content;
 	}
 	
-	public long GetID() {
+	public long getId() {
 		return id;
 	}
 	

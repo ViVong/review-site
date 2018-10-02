@@ -1,1 +1,11 @@
-<h1>Home Page</h1>
+<style>
+body{
+    background: linear-gradient(to left, #d0e4f7 10%, #73b1e7 70%, #87bcea 90%)
+}
+</style>
+<h1>Reviews Site</h1>
+<ol>
+<div th:each = "review: ${reviews}">
+	<li><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+</div>
+</ol>

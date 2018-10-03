@@ -1,6 +1,7 @@
 <div th:each = "review: ${reviews}">
 	<h1><p th:text = "${review.title}"></p></h1>
-	<body background = th:text="${review.url}"></body>
+	<h5>Category: <span th:text="${review.category}"></span><br/>Date Published:<span th:text="${review.date}"></span></h5>
+	<body th:background = "${review.url}"></body>
 	<p th:text = "${review.content}"></p>
 	<a href = "http://localhost:8080/">Back to home</a>
 </div>
